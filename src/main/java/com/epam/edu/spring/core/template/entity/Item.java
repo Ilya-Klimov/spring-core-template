@@ -14,6 +14,9 @@ public class Item {
         this.color = color;
     }
 
+    public Item() {
+    }
+
     public long getId() {
         return id;
     }
