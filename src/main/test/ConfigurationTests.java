@@ -1,3 +1,4 @@
+import com.epam.edu.spring.core.template.configuration.InitializerConfiguration;
 import com.epam.edu.spring.core.template.configuration.MainConfiguration;
 import com.epam.edu.spring.core.template.repository.ArrayListItemRepository;
 import com.epam.edu.spring.core.template.repository.ItemRepository;
@@ -17,6 +18,9 @@ public class ConfigurationTests {
     LinkedListItemRepository linkedListItemRepository;
     @Autowired
     ArrayListItemRepository arrayListItemRepository;
+    @Autowired
+    InitializerConfiguration.ColorFactory colorFactory;
+
 
 
     @Test
@@ -28,9 +32,15 @@ public class ConfigurationTests {
     public void linkedListItemRepositoryBeanExistTest(){
         assertNotNull(linkedListItemRepository);
     }
+
     @Test
     public void  arrayListItemRepositoryBeanExistTest(){
         assertNotNull(arrayListItemRepository);
+    }
+
+    @Test
+    public void colorFactoryBeanExistTest(){
+        assertNotNull(colorFactory);
     }
 
 }

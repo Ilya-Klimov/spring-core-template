@@ -1,7 +1,7 @@
 package com.epam.edu.spring.core.template.repository;
 
 import com.epam.edu.spring.core.template.entity.Item;
-import org.springframework.stereotype.Repository;
+
 
 import java.util.LinkedList;
 import java.util.List;
